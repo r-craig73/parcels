@@ -1,30 +1,27 @@
 # Triangles
 
-#### A simple Sinatra application for evaluating the geometry of triangles, 02.09.2018
+#### A simple Sinatra application for evaluating cost of shipping for a parcel, 02.12.2018
 
 #### By Ron Craig, Russell Hofvendahl
 
 ## Description
 
-Take as input three side lengths and return whether the result will be either an equilateral, isosceles, scalene or NO triangle.
+Take parcel dimensions and weight as input, output cost to ship.
 
 ## Specifications
 
-1. Check if the three inputs are the same value (equilateral triangle).
+1. Evaluate parcel volume
   Example Input: 4, 4, 4
   Example Output: true
-2. Check if the three inputs do not form a triangle
+2. Evaluate cost to ship
   * Example Input: 3, 3, 2
   * Example Output: true
-3. Check if the three inputs from an isosceles triangle
-  * Example Input: 2, 3, 4
-  * Example Output: true
-4. Return triangle type after checking the three previous conditions
-  * Example Inputs: 5, 5, 5
-  * Example Output: equilateral
-5. Capture user input through HTML forms
+3. Capture user input through HTML forms
   * Example Inputs: Please enter the triangle sides 5, 5, 5
-  * Example Ouputs: This forms an equilateral triangle
+  * Example Outputs: This forms an equilateral triangle
+4. Output cost to ship
+  * Example Inputs: 5x10x10 inches 6 lbs
+  * Example Outputs: $6
 
 ## Setup/Installation Requirements
 
