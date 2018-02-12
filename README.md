@@ -17,8 +17,8 @@ Take parcel dimensions and weight as input, output cost to ship.
   * Example Input: 3, 3, 2
   * Example Output: true
 3. Capture user input through HTML forms
-  * Example Inputs: Please enter the triangle sides 5, 5, 5
-  * Example Outputs: This forms an equilateral triangle
+  * Example Inputs: Please enter the dimensions & weight
+  * Example Outputs: 
 4. Output cost to ship
   * Example Inputs: 5x10x10 inches 6 lbs
   * Example Outputs: $6

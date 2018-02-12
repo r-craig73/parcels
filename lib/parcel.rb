@@ -13,8 +13,8 @@ class Parcel
     @length * @width * @height
   end
 
-  # def cost_to_ship
-  #   @cost = (@length * @width * @height)/(@weight)
-  # end
+  def cost_to_ship
+    @cost = volume * @weight / 500
+  end
 
 end
