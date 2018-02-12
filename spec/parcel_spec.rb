@@ -6,7 +6,7 @@ describe('Parcel') do
   describe('#volume') do
     it('evaluate parcel volume') do
       parcel = Parcel.new(5, 10, 10, 6)
-      expect(triangle.volume).to(eq(500))
+      expect(parcel.volume).to(eq(500))
     end
   end
 
