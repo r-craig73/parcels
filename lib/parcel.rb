@@ -17,4 +17,11 @@ class Parcel
     @cost = volume * @weight / 500
   end
 
+  def cost_to_wrap
+    surface_area = @length*@width*2 + @width*@height*2 + @height*@length*2
+    if (surface_area <= 600)
+      3
+    end
+    5
+  end
 end

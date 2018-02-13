@@ -14,12 +14,15 @@ end
 
 
 get('/output') do
-  @side_a = params.fetch("length").to_f
-  @side_b = params.fetch("width").to_f
-  @side_c = params.fetch("height").to_f
-  @lbs = params.fetch("weight").to_f
-  # binding.pry
-  package_cost = Parcel.new(@side_a, @side_b, @side_c, @lbs)
-  @cost_response = package_cost.cost_to_ship
+  @length = params.fetch("length").to_f.round(2)
+  @width = params.fetch("width").to_f.round(2)
+  @height = params.fetch("height").to_f.round(2)
+  @lbs = params.fetch("weight").to_f.round(2)
+  binding.pry
+  parcel = Parcel.new(@length, @width, @height, @lbs)
+  @cost_response = parcel.cost_to_ship.round(2)
+  if (params.fetch("wrap") == "do")
+    @cost_response += parcel.cost_to_wrap
+  end
   erb(:output)
 end

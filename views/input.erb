@@ -3,19 +3,32 @@
 <form action="/output">
   <div class="form-group">
     <label for="length">Length (inches):</label>
-    <input id="l" name="length" class="form-control" type="text">
+    <input name="length" class="form-control" type="text">
   </div>
   <div class="form-group">
     <label for="width">Width (inches): </label>
-    <input id="w" name="length" class="form-control" type="text">
+    <input name="width" class="form-control" type="text">
   </div>
   <div class="form-group">
     <label for="height">Height (inches): </label>
-    <input id="h" name="height" class="form-control" type="text">
+    <input name="height" class="form-control" type="text">
   </div>
   <div class="form-group">
     <label for="weight">Weight (pounds): </label>
-    <input id="lbs" name="weight" class="form-control" type="text">
+    <input name="weight" class="form-control" type="text">
+  </div>
+
+  <div class="radio">
+    <label>
+      <input type="radio" name="wrap" value="do" checked>
+      Wrap
+    </label>
+  </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="wrap" value="do not">
+      Don't wrap
+    </label>
   </div>
   <button type="submit" class="btn bg-info">Go!</button>
 </form>
